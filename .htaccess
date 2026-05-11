@@ -1,0 +1,14 @@
+# Bloquear arquivos sensíveis
+<FilesMatch "^(\.env|\.git|composer\.json|composer\.lock|README|GUIDE|projeto)">
+    Require all denied
+</FilesMatch>
+
+# Desabilitar listagem de diretórios
+Options -Indexes
+
+# Headers básicos
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
