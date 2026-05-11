@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.5rem;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             box-shadow: 0 10px 20px rgba(75, 0, 129, 0.2);
         }
     </style>
