@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         .login-card {
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
             border: none;
             border-radius: 1.5rem;
         }
