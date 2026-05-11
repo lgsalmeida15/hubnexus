@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="card login-card shadow-lg mx-auto">
             <div class="card-body p-5">
                 <div class="text-center mb-4">
-                    <img src="assets/img/claro.png" id="navbar-logo" alt="HubNexus" style="max-height: 80px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <img src="assets/img/claro.png" id="navbar-logo" alt="HubNexus" style="max-height: 80px; max-width: 100%; height: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="login-logo" style="display:none;">
                         <i class="bi bi-grid-fill"></i>
                     </div>
