@@ -1,0 +1,17 @@
+# Deny access to sensitive files
+<FilesMatch "^\.env$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^\.(git|svn|hg|DS_Store|htpasswd|htaccess|idea|vscode|editorconfig|project|settings|sql|bak|dist|old|temp|tmp|log|cache|user|ini|sh|bat|exe|zip|tar\.gz|tgz|rar|7z)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Optional: Deny access to specific directories if needed
+# For example:
+# <Directory "/path/to/your/sensitive/folder">
+#     Order allow,deny
+#     Deny from all
+# </Directory>
